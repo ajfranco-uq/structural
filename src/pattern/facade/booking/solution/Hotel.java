@@ -5,15 +5,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 // ============================================================
-// SUBSISTEMA: HABITACIONES
+// SUBSISTEMA: HOTEL
 // ============================================================
 
-class Habitaciones {
-
+class Hotel {
     private List<Habitacion> habitaciones = new ArrayList<>();
     private List<Reserva> reservas = new ArrayList<>();
 
-    public Habitaciones() {
+
+    public Hotel() {
         habitaciones.add(new Habitacion(101, 100000));
         habitaciones.add(new Habitacion(205, 150000));
         habitaciones.add(new Habitacion(301, 200000));

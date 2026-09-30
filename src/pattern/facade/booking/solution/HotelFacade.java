@@ -9,14 +9,14 @@ import java.time.temporal.ChronoUnit;
 
 class HotelFacade {
 
-    private Habitaciones habitaciones;
+    private Hotel habitaciones;
     private Cliente cliente;
     private Pago pago;
     private Notificacion notificacion;
 
     public HotelFacade() {
 
-        habitaciones = new Habitaciones();
+        habitaciones = new Hotel();
         cliente = new Cliente();
         pago = new Pago();
         notificacion = new Notificacion();
