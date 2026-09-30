@@ -9,14 +9,14 @@ import java.time.temporal.ChronoUnit;
 
 class HotelFacade {
 
-    private Hotel habitaciones;
+    private Hotel hotel;
     private Cliente cliente;
     private Pago pago;
     private Notificacion notificacion;
 
     public HotelFacade() {
 
-        habitaciones = new Hotel();
+        hotel = new Hotel();
         cliente = new Cliente();
         pago = new Pago();
         notificacion = new Notificacion();
@@ -25,8 +25,7 @@ class HotelFacade {
     public void reservarHabitacion(String nombre, int numeroHabitacion, LocalDate entrada, LocalDate salida, double abono) {
 
         // Buscar la habitación
-        Habitacion habitacion =
-                habitaciones.buscarHabitacion(numeroHabitacion);
+        Habitacion habitacion = hotel.buscarHabitacion(numeroHabitacion);
 
         if (habitacion == null) {
             System.out.println("La habitación no existe.");
@@ -34,7 +33,7 @@ class HotelFacade {
         }
 
         // Verificar disponibilidad
-        if (!habitaciones.estaDisponible(
+        if (!hotel.estaDisponible(
                 numeroHabitacion,
                 entrada,
                 salida)) {
@@ -84,7 +83,7 @@ class HotelFacade {
         // Registrar reserva
         Reserva reserva = new Reserva(nombre, numeroHabitacion, entrada, salida);
 
-        habitaciones.agregarReserva(reserva);
+        hotel.agregarReserva(reserva);
 
         // Confirmación
         notificacion.enviarConfirmacion(nombre, reserva.getNumero(), numeroHabitacion, entrada, salida, total);
