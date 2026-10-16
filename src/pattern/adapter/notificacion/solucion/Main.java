@@ -57,5 +57,11 @@ public class Main {
 
 
         // TODO: Que pasa si luego se quiere agregar otro medio de notifiación? -> Agregar Telegram
+
+        // declarar sistema telegram
+        // Crear adapter
+        // llamar sistemaPedidos
+        // Enviar el mensaje
+
     }
 }

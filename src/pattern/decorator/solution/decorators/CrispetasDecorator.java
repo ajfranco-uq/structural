@@ -1,6 +1,5 @@
 package pattern.decorator.solution.decorators;
 
-
 import pattern.decorator.solution.Entrada;
 
 public class CrispetasDecorator extends EntradaDecorator {

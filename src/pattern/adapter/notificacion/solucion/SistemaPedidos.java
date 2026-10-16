@@ -6,6 +6,8 @@ package pattern.adapter.notificacion.solucion;
 //
 // Solo conoce la interfaz Notificador.
 
+import pattern.adapter.notificacion.problema.WhatsApp;
+
 public class SistemaPedidos {
 
     private final Notificador notificador;

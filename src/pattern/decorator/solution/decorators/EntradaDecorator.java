@@ -3,6 +3,7 @@ package pattern.decorator.solution.decorators;
 import pattern.decorator.solution.Entrada;
 
 abstract class EntradaDecorator implements Entrada {
+
     protected Entrada entrada;
     public EntradaDecorator(Entrada entrada) {
         this.entrada = entrada;

@@ -1,5 +1,7 @@
 package pattern.composite.solution;
 
+import pattern.composite.problem2.ElementoMusical;
+
 import java.util.ArrayList;
 import java.util.List;
 

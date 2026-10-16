@@ -2,6 +2,7 @@ package pattern.decorator.solution;
 
 import pattern.decorator.solution.decorators.BebidaDecorator;
 import pattern.decorator.solution.decorators.CrispetasDecorator;
+import pattern.decorator.solution.decorators.Gafas3DDecorator;
 
 public class Main {
 
@@ -26,9 +27,9 @@ public class Main {
         System.out.println("Precio: $" + entrada.calcularPrecio());
 
         // 4. Y podemos agregar más si se desea
-        // entrada = new Gafas3DDecorator(entrada);
+        entrada = new Gafas3DDecorator(entrada);
 
-        // System.out.println("\n" + entrada.descripcion());
-        // System.out.println("Precio: $" + entrada.calcularPrecio());
+        System.out.println("\n" + entrada.descripcion());
+        System.out.println("Precio: $" + entrada.calcularPrecio());
     }
 }
